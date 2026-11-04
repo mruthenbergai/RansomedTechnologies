@@ -1,6 +1,6 @@
 # Ransomed Technologies LLC
 
-Source repository for the future company website.
+Source repository for the company website, using the approved red wordmark with a white crown as the “o.”
 
 ## Connected services
 
@@ -11,23 +11,33 @@ Source repository for the future company website.
 - Primary domain: `ransomedtechnologies.com`
 - Short domain: `ransomedtech.com`, redirected through its existing dedicated Vercel redirect project
 
-## Current state
+## Website
 
-This repository was initialized on November 3, 2026 to resolve the empty-repository / missing-branch error in Vercel. The user requested repository preparation only. Website design and application implementation have not started.
+The static site highlights website design and creation, ecommerce integration, app development, AI integration, and strategic brand transformation. It includes light and dark modes and features WelcomeNow, SwapWrite, ReadIt4Me, and JoJo’s Playhouse. Only JoJo’s Playhouse is labeled coming soon.
 
-`vercel.json` sets `git.deploymentEnabled` to `false`. This deliberately prevents automatic deployments while the website is being prepared. Do not try to deploy this documentation-only repository as a finished website.
+The user-approved public contact address is `sales@transformedtechnologies.com`. Its spelling is intentional and was supplied by the user.
 
-No database, environment secrets, build dependencies, or framework have been added. The website does not need a database merely to begin development.
+The source is in `site/`; the build copies only that directory into `dist/`. There are no runtime packages, database, account system, or contact-form backend. See [the confirmed brief](docs/WEBSITE-BRIEF.md) for scope.
 
-## Next website build
+## Local development
 
-1. Confirm the company website brief in `docs/WEBSITE-BRIEF.md`.
-2. Implement the website in this repository and set the appropriate Vercel framework/build settings.
-3. Check the actual website locally, including desktop/mobile layout, links, and accessibility.
-4. As part of the website release, change `git.deploymentEnabled` to `true` (or remove the setting), then push the reviewed site to the intended branch.
-5. Verify the successful deployment, HTTPS for the primary domain, and the short-domain redirect.
+Use Node.js 20 or newer. No package installation is required.
 
-The domain cannot serve the company website until that website has been implemented and deployed. Vercel's domain and certificate status should be rechecked at that point.
+```powershell
+npm run check
+npm run build
+npm run dev
+```
+
+Open `http://127.0.0.1:4173`. The development server serves the built `dist/` directory, so run `npm run build` again after editing `site/`. Set `PORT` if a different local port is needed.
+
+`npm run check` validates local asset and link targets, anchor and ARIA references, CSS asset references, and JavaScript syntax. Browser verification also needs to cover mobile/desktop layouts, keyboard access, both themes, and the complete navigation and contact flows.
+
+## Hosting
+
+Reuse the existing Vercel project and redirect project. The static output directory is `dist`, built with `npm run build`. Review `git.deploymentEnabled` in `vercel.json` as part of a release; its original disabled setting deliberately held deployments during repository preparation.
+
+A local build is not proof of a live release. After publishing, verify the actual deployment, HTTPS for the primary domain, and both short-domain and `www` redirects. The historical setup record is in [docs/SETUP.md](docs/SETUP.md).
 
 ## Local checkout
 
