@@ -12,7 +12,7 @@
 - Include a light/dark mode switch.
 - Highlight the user's other apps: WelcomeNow, SwapWrite, ReadIt4Me, and JoJo’s Playhouse.
 - Only JoJo’s Playhouse is coming soon.
-- Confirmed public app URLs: WelcomeNow — http://www.welcomenow.app ; ReadIt4Me — https://readit4me.vercel.app/ ; SwapWrite — https://swapwrite.com.
+- Confirmed public app URLs: WelcomeNow — https://welcomenow.app/login ; ReadIt4Me — https://readit4me.vercel.app/ ; SwapWrite — https://swapwrite.com.
 - Public contact email: `sales@transformedtechnologies.com`, exactly as supplied by the user.
 - Implement a responsive static website in this existing repository and use the existing Vercel project.
 

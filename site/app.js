@@ -47,7 +47,7 @@ const apps = {
     name: 'WelcomeNow', category: 'COMMUNITY & CONNECTION',
     description: 'A thoughtful way for churches to welcome visitors, coordinate greeters, and nurture connection.',
     features: ['Give the first hello a thoughtful place in your church’s story.', 'Coordinate greeters and visitor connection in one workspace.', 'Keep the focus on people and the relationships that follow.'],
-    status: 'Explore a more thoughtful welcome.', url: 'http://www.welcomenow.app', linkText: 'Visit WelcomeNow'
+    status: 'Explore a more thoughtful welcome.', url: 'https://welcomenow.app/login', linkText: 'Visit WelcomeNow'
   },
   swap: {
     name: 'SwapWrite', category: 'TOOLS FOR AUTHORS',
