@@ -73,6 +73,7 @@ document.querySelectorAll('[data-app]').forEach((button) => button.addEventListe
   const app = apps[button.dataset.app];
   document.querySelector('#dialog-category').textContent = app.category;
   document.querySelector('#dialog-title').textContent = app.name;
+  document.querySelector('#dialog-icon').hidden = button.dataset.app !== 'read';
   document.querySelector('#dialog-description').textContent = app.description;
   document.querySelector('#dialog-status').textContent = app.status;
   const features = document.querySelector('#dialog-features');

@@ -10,6 +10,7 @@
 - Current request: build the company website using the approved logo with the white circular crown replacing the “o” in “Ransomed.”
 - Highlight these five services: website design and creation, ecommerce integration, app development, AI integration, and strategic brand transformation.
 - Include a light/dark mode switch.
+- ReadIt4Me branding: use the supplied full wordmark in the app showcase and the supplied book-and-headphones symbol in compact placements such as its details panel.
 - Highlight the user's other apps: WelcomeNow, SwapWrite, ReadIt4Me, and JoJo’s Playhouse.
 - Only JoJo’s Playhouse is coming soon.
 - Confirmed public app URLs: WelcomeNow — https://welcomenow.app/login ; ReadIt4Me — https://readit4me.vercel.app/ ; SwapWrite — https://swapwrite.com.
